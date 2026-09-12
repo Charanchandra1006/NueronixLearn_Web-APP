@@ -1,0 +1,46 @@
+# Robots.txt for NueronixLearn
+# https://nueronixlearn.com
+
+User-agent: *
+Allow: /
+
+# Crawl-delay (optional, for respectful crawling)
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://nueronixlearn.com/sitemap.xml
+
+# Disallow private/admin areas
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*?
+
+# Allow static assets
+Allow: /static/
+Allow: /images/
+Allow: /*.svg
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.webp
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
+# Slurp (Yahoo)
+User-agent: Slurp
+Allow: /
+Disallow: /api/
+
+# DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /api/
